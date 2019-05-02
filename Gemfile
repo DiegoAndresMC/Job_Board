@@ -39,6 +39,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '>= 2.15'
+  gem 'selenium-webdriver'
 end
 
 group :development do
@@ -63,7 +66,16 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'bulma-rails'
+gem 'simple_form', '~> 4.1'
+gem 'gravatar_image_tag', github: 'mdeering/gravatar_image_tag'
 gem 'sidekiq'
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick', '~> 4.8'
+gem 'stripe', '~> 3.11'
+#gem 'trix', '~> 0.11.1'
+
+gem "figaro"
+
 group :development, :test do
   gem 'better_errors'
   gem 'guard'
