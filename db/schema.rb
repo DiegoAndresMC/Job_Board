@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_02_042007) do
+ActiveRecord::Schema.define(version: 2019_05_03_043434) do
 
 # Could not dump table "jobs" because of following StandardError
 #   Unknown type 'strings' for column 'avatar'
